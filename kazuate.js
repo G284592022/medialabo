@@ -25,12 +25,3 @@ function hantei() {
 for (let n of kotae) {
     console.log(n);
 }
-
-
-if(kotae === 4) {
-    console.log('正解です.おめでとう!')
-} else if (kotae > kaisu){
-    console.log('まちがい.答えはもっと大きいですよ')
-} else if (kotae < kaisu) {
-    console.log('まちがい.答えはもっと小さいですよ')
-}

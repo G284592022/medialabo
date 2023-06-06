@@ -11,7 +11,7 @@ let kaisu=1;
 // 代わりにここでは，ボタンを押したら hantei() を呼び出すイベント処理をする
 
 let kaito = document.querySelector('button#kaito'); 
-kaito.addEventListener('dbclick',hantei);
+kaito.addEventListener('click',hantei);
 
 // ボタンを押した後の処理をする関数 hantei() の定義
 function hantei() {

@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <title>NHKの番組表></title>
-    </head>
-    <h2>NHKの番組表</h2>>
-    <h3>検索キー</h3>
+       <title>世界の天気</title>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+       <script src="weather.js" defer></script>
+       <link rel="stylesheet" href="style1.css">
+
+</head>
+<body>
+    <h1>世界の天気</h1>
+    
+    <label for="tosi"><strong>都市名:</strong></label>
+    <input type="text" name="tosi" size="10">
+    <button id="kensaku">検索</button>
+    <h3>以下の都市から検索してください</h3>
     <ul>
-        <li>0000...ニュース・報道</li>>
-        <li>0100...スポーツ</li>>
-        <li>0205...情報・ワイドショー</li>
-        <li>0300...ドラマ</li>
-        <li>0409...音楽</li>
-        <li>0502...バライティ</li>
-        <li>0600...映画</li>
-        <li>0700...アニメ</li>
-        <li>0800...ドキュメンタリー・教養</li>
-        <li>0903...劇場・公演</li>
-        <li>1000...趣味・教育</li>
-        <li>1100...福祉</li>
-    </ul>>
-    <h2>検索結果のデータ項目</h2>
-    <H3>項目名	項目の説明</H3>>
-   <p> start_time	番組開始時刻</p>>
-   <p> end_time	番組終了時刻</p>>
-    <p>service.name	チャンネル</p>>
-    <p>title	番組名</p>>
-    <p>subtitle	番組サブタイトル</p>>
-    <p>content	番組説明文</p>>
-    <p>act	出演者</p>>
+    <li>カイロ</li>
+    <li>モスクワ</li>
+    <li>ヨハネスブルク</li>
+    <li>北京</li>
+    <li>東京</li>
+    <li>シンガポール</li>
+    <li>シドニー</li>
+    <li>ロンドン</li>
+    <li>パリ</li>
+    <li>リオデジャネイロ</li>
+    <li>ニューヨーク</li>
+    <li>ロサンゼルス</li>
+</ul>
+    <p>天気:<span id="tenki"></span></p>
+    <p>最高気温:<span id="saikoukion">○</span>°C</p>
+    <p>最低気温:<span id="saiteikion">○</span>°C</p>
+    <p>最低気温:<span id="huusoku">○</span>m</p>
+
+    
 </body>
 </html>

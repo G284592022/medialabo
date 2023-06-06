@@ -14,12 +14,46 @@ let data = [
 //// 注意: 以上は編集しないこと!
 
 // 練習4-2 メッセージ追加プログラム
-let h2 = document.querySelector('h2#ex42');
-let =document.createElement('p');
-p.textEmphasis='練習4-2: 説明文の追加';
-h2.insertAdjacentElement('afterend' ,p);
-h2.Style.color='sentensegreen';
-// 練習4-3 写真表作成プログラム
-let div = document.querySelector('div#phottable');
-let beeLink = document.createElement('p');
-beeLink.textContent='';
+let h2 = document.querySelector('h2#ex42');   
+
+let p = document.createElement('p');
+p.textContent='写真表と都市の緯度軽度のページです';
+p.style.textEmphasis='seasame green';
+h2.insertAdjacentElement('afterend',p);
+
+let div= document.querySelector('div#photetable');
+
+let beeLink =document.createElement('img');
+beeLink.setAttribute('src','taro.png');
+
+let beeLink1 =document.createElement('p');
+beeLink1.insertAdjacentElement('beforeend', beeLink);
+div-phototable.insertAdjacentElement('beforeend',beeLink1);
+
+let beeLink2 =document.createElement('img');
+beeLink2.setAttribute('src', 'jiro.png');
+
+let beeLink3 =document.createElement('p');
+beeLink3.insertAdjacentElement('beforeend', beeLink2);
+div-phototable.insertAdjacentElement('beforeend',beeLink3);
+
+let beeLink4 =document.createElement('img');
+beeLink4.setAttribute('src', 'hanako.png');
+
+let beeLink5 =document.createElement('p');
+beeLink5.insertAdjacentElement('beforeend', beeLink4);
+div-phototable.insertAdjacentElement('beforeend',beeLink5);
+
+// 練習4-4 箇条書きの削除
+let n = document.querySelectorAll('li');
+for(let li of n){
+	li.remove();
+}
+
+let ul =document.querySelector('ul#location')
+for(let m of data){
+	let li = document.createElement('a');
+	li.textContent = (m.name)+' ... 緯度:'+(m.lat)+',経度:'+(m.lng);
+	ul.insertAdjacentElement('beforeend',li);
+}
+

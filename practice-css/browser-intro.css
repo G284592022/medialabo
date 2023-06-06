@@ -3,25 +3,40 @@ p {
 }
 
 p.info {
-	font-size: 10pt;
+	font-size: small;
+	background-color:#dfdfdf;
 }
 
 h1 {
-	background-color: #7f7fcf;
+	color:White;
+	text-shadow: navy 5px 0 10px;
 }
 
 h2 {
-	border: solid 1px black;
+	
+	border: solid 1px whitesmoke;
 	margin: 5px;
+	font-family: cursive;
+	color: #3f3faf;
+	background: linear-gradient(to left top,white,#ffefaf);
+	
 }
 
 div#zentai {
-	display: flex;
+	display: grid;
 	flex-direction: row;
 	width: 1024px;
+	padding: 5px;
+	grid-template-columns: 1fr 1fr;
+	grid-auto-rows: 200px 200px; 
+	grid-gap: 10px;
 }
 
 div#zentai > div {
+	float:right;
 	margin-left: 5px;
 	background-color: #ffefaf;
+}
+img.icon{
+	float:right;
 }
